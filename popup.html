@@ -1,21 +1,72 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Sentiment API</title>
+  <title>YouTube Comment Analyzer</title>
   <style>
+    /* Dark Theme */
     body {
-      width: 400px;  /* Set desired width */
-      height: 500px; /* Set desired height */
-      margin: 0;
+      font-family: Arial, sans-serif;
+      width: 400px;
+      padding: 10px;
+      background-color: #1e1e1e;
+      color: #f1f1f1;
+    }
+    h1 {
+      font-size: 20px;
+      color: #ffffff;
+    }
+    .section {
+      margin-bottom: 15px;
+    }
+    .section-title {
+      font-weight: bold;
+      color: #0099ff;
+      margin-top: 10px;
+      font-size: 16px;
+    }
+    .sentiment-boxes {
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+      margin-top: 10px;
+    }
+    .sentiment-box {
+      flex: 1;
+      padding: 10px;
+      border-radius: 5px;
+      text-align: center;
+      background-color: #333;
+      color: #f1f1f1;
+    }
+    .sentiment-box .label {
+      font-size: 14px;
+      text-transform: uppercase;
+      color: #ccc;
+    }
+    .sentiment-box .percentage {
+      font-size: 24px;
+      font-weight: bold;
+      color: #ffffff;
+    }
+    .comment-list {
+      list-style: none;
       padding: 0;
-      overflow: hidden;
+    }
+    .comment-item {
+      margin: 8px 0;
+      padding: 8px;
+      background-color: #444;
+      border-radius: 4px;
+    }
+    .comment-sentiment {
+      font-weight: bold;
+      color: #ffffff;
     }
   </style>
 </head>
 <body>
-  <h1>Test Sentiment</h1>
-  <button id="sendRequest">Send Random Text</button>
-  <div id="response"></div>
+  <h1>YouTube Comment Analyzer</h1>
+  <div id="output" class="section"></div>
   <script src="popup.js"></script>
 </body>
 </html>

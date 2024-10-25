@@ -2,10 +2,10 @@
     "manifest_version": 3,
     "name": "YouTube Sentiment Analysis",
     "version": "1.0",
-    "description": "Send random text to API and receive sentiment response.",
+    "description": "Checks if the current URL is a YouTube video and fetches the comment count.",
     "action": {
       "default_popup": "popup.html"
     },
-    "permissions": ["scripting"]
+    "permissions": ["tabs"]
   }
   
