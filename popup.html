@@ -6,10 +6,12 @@
     /* Dark Theme */
     body {
       font-family: Arial, sans-serif;
-      width: 400px;
       padding: 10px;
       background-color: #1e1e1e;
       color: #f1f1f1;
+      margin: 0;
+      box-sizing: border-box;
+      width: 320px; /* Set a width that fits the Chrome extension popup */
     }
     h1 {
       font-size: 20px;
@@ -24,30 +26,6 @@
       margin-top: 10px;
       font-size: 16px;
     }
-    .sentiment-boxes {
-      display: flex;
-      justify-content: space-between;
-      gap: 10px;
-      margin-top: 10px;
-    }
-    .sentiment-box {
-      flex: 1;
-      padding: 10px;
-      border-radius: 5px;
-      text-align: center;
-      background-color: #333;
-      color: #f1f1f1;
-    }
-    .sentiment-box .label {
-      font-size: 14px;
-      text-transform: uppercase;
-      color: #ccc;
-    }
-    .sentiment-box .percentage {
-      font-size: 24px;
-      font-weight: bold;
-      color: #ffffff;
-    }
     .comment-list {
       list-style: none;
       padding: 0;
@@ -61,6 +39,36 @@
     .comment-sentiment {
       font-weight: bold;
       color: #ffffff;
+    }
+    /* Image Styling */
+    img {
+      width: 100%;
+      margin-top: 20px;
+    }
+    /* Metrics Styling */
+    .metrics-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    .metric {
+      width: 48%;
+      background-color: #444;
+      margin-bottom: 10px;
+      padding: 10px;
+      border-radius: 4px;
+      text-align: center;
+      box-sizing: border-box;
+    }
+    .metric-title {
+      font-size: 12px;
+      color: #cccccc;
+    }
+    .metric-value {
+      font-size: 22px;
+      font-weight: bold;
+      color: #ffffff;
+      margin-top: 5px;
     }
   </style>
 </head>
